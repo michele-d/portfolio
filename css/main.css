@@ -1,0 +1,325 @@
+/***** BASE STYLES *****/
+/* gray = #666666*/
+/* green = #cbd4b7 */
+/* teal = #2c6c96 */
+
+
+
+html {
+	font-size: 16px;
+}
+body {
+  font-family: 'Roboto', sans-serif;  
+  font-size: 1em;
+  color: #666666;
+  background: #cbd4b7;
+  margin: 0;
+  	
+}
+
+h1 {
+	font-family: 'El Messiri', sans-serif;
+	font-size: 2em;
+	color: #cbd4b7;
+
+}
+
+h2 {
+  font-family: 'El Messiri', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #2c6c96;
+}
+
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h4 {
+	font-size: 1.25em;
+	font-weight: bold;
+	
+}
+
+
+/***** HEADER *****/
+header {
+  background: url('../img/hero.jpg') no-repeat;
+  background-size: cover;
+  margin: 0;
+  height: 850px;
+  	 display:flex;
+	 justify-content: center;
+	 align-items: flex-start;
+	 flex-flow: row wrap;
+}
+
+.header-container {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;  
+}
+
+
+.nav {
+	max-width: 50%;
+	display: flex;
+	justify-content: center;
+	margin: 60px 0;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row;
+	
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1em;
+	padding: .75rem;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:white;
+}
+
+
+header h1 {
+	margin-top: 1rem;
+	padding: .5rem 0;
+	width: 100%;
+	text-align: center;
+}
+
+header h3 {
+	text-align:center;
+	color: white;
+}
+
+/***** ABOUT *****  &  ***** PORTFPOLIO *****/
+
+.portfolio {
+	background: #f2f2f2;
+	padding-bottom: 50px;
+}
+
+.container {
+	max-width: 1900px;
+	width: 90%;	
+	margin: 0 5%;	
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.about, .about h2, .portfolio, .portfolio h2, .portfolio .project,  .desc, .image {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.desc p {
+	padding: 0 5%;
+	font-size: 1.125em;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+.about .image img {
+	border-radius: 50%;
+	margin-bottom: 30px;
+	max-width:70%;
+	height: auto;
+}
+
+.portfolio .image img {
+	width: 100%;
+}
+
+.project-divider {
+	background: #2c6c96;
+    height: 2px;
+    width: 80%;
+    margin: 10px 10% 60px 10%;
+}
+
+/***** Footer Styles *****/
+
+.meet, .hire {
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.follow {
+	width: 70%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	margin: 0 15%;
+}
+
+.meet h3, .meet p, .follow h3, .hire h3, .hire p {
+	width: 100%;
+	text-align: center;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row;
+	min-width:85%;
+}
+
+.fontawesome-icon {
+	display:flex;
+	font-size: 5em;
+	margin: 0;
+}
+
+footer h3 {
+	margin: 30px 0 10px 0;
+	font-size: 3em;
+}
+
+footer p {
+	margin: 0;
+	font-size: 1em;
+}
+
+.follow a {
+	color: #666666;
+}
+
+.hire a {
+	color: #666666;
+	text-decoration: none;
+}
+
+.copyright {
+	padding: 50px;
+    text-align: center;
+}
+
+
+/***** Tablet Styles *****/
+
+@media screen and (min-width: 760px) {
+	.header-container {
+		width: 90%;
+		align-items: flex-end;
+	}
+	.nav {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		margin: 20px 0;
+	}
+	header h1, header h3 {
+		text-align: left;
+	}
+	header h1 {
+		font-size: 3.5em;
+		margin: 0;
+	}
+	header nav ul li a{
+		text-align: right;
+	}
+	
+	.title {
+		display: flex;
+		align-items: flex-start;
+		flex-flow: row wrap;
+	}
+	
+	.about .article{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#about-project {
+		display:flex;
+	}
+
+	.about .image, .about .desc {
+		flex-flow: row;
+	}
+	.about .image {
+		flex-basis: 250px;
+		flex-grow: 1;
+	}
+	.about .desc {
+		flex-basis: 600px;
+		flex-grow: 2;
+		margin-bottom: 30px;
+	}
+	.about .image img {
+		border-radius: revert;
+	}
+	.social-icons {
+	justify-content: space-around;
+	min-width:80%;
+	}
+}
+/*****Desktop Styles *****/
+
+@media only screen and (min-width: 1200px){
+	main h2 {
+		font-size: 3em;
+	}
+	main h4 {
+		font-size: 2em;
+	}
+	main p {
+		font-size: 1.5em;
+	}
+	
+	.project-divider {
+			display:none;
+	}
+	#portfolio .project {
+		flex-flow: row;
+		margin: 30px;
+	}
+	.portfolio .image {
+		flex-flow: row;
+		flex-basis: 400px;
+		flex-grow: 1;
+	}
+	.portfolio .desc {
+		flex-flow: row wrap;
+		flex-basis: 800px;
+		flex-grow: 2;
+		margin-bottom: 30px;
+	}
+	footer .container {
+		display:flex;
+		justify-content:center;
+		align-items: baseline;
+		flex-flow: row;
+	}
+	.meet, .hire {
+		width: 33%;
+		display:flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-flow: row wrap;
+	}
+	.follow {
+		margin: 5%;
+	}
+}
